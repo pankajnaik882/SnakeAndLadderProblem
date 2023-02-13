@@ -10,8 +10,9 @@ namespace SnakeLadderProblem
     {
         public static void player()
         {
-            int player = 0;
-            Console.WriteLine("Player Position : "+player);  
+            Random random= new Random();
+            int player = random.Next(1, 7);
+            Console.WriteLine("Player Roll the Dice : "+player);
         }
     }
 }
