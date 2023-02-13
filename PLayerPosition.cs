@@ -30,6 +30,7 @@ namespace SnakeLadderProblem
                             Console.WriteLine(" Player moves behind by the number of position received in the dice");
                             position = position - Dice;
                             Console.WriteLine("position moves back : " + position);
+                            Console.WriteLine("Dice Roll :"+Dice);
                         }
                         else if(result == 1) 
                         {
@@ -37,22 +38,29 @@ namespace SnakeLadderProblem
                             Console.WriteLine(" Player moves ahead by the number of position received in the die");
                             position = position + Dice;
                             Console.WriteLine("position moves ahead : " + position);
+                            Console.WriteLine("Dice Roll :" + Dice);
                         }
                         else
                         {
                             Console.WriteLine("No Play");
                             Console.WriteLine("Player Will Stay in the same position");
+                            Console.WriteLine("Dice Roll :" + Dice);
                         }
                     
                     }
                     else if (position == 100)
                     {
                         Console.WriteLine("Player has Won !!!");
+                        Console.WriteLine("Dice Roll :" + Dice);
 
                     }
+                    count++;
+                    //Console.WriteLine("Count : ", count);
                 }
-                count++;
+               
+
             }
+           
         }
     }
 }
